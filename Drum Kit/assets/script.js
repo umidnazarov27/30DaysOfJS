@@ -19,11 +19,17 @@ btns.forEach((elem) => {
 window.addEventListener('keydown', function (event) {
   for (const key in keyCode) {
     if (event.keyCode != key) continue;
-    playSound(keyCode[key])
+    playSound(keyCode[key]);
   }
 });
 
 
 function playSound(e) {
+  let active = document.querySelector('#' + e);
+  active.classList.add('purple');
   let sound = new Audio('assets/sounds/' + e + '.wav').play();
+  setTimeout(function () {
+    active.classList.remove('purple');
+  }, 150)
+
 }

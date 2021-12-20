@@ -62,3 +62,25 @@ body {
 .title, .subtitle {
   user-select: none;
 }
+
+
+.purple {
+  border-color: #8553a0;
+}
+
+
+@media (max-width: 600px) {
+  .btn {
+    width: calc(33% - 2rem);
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    padding: 0.5rem 0;
+  }
+
+  .btn {
+    width: calc(50% - 2rem);
+  }
+}

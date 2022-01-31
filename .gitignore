@@ -1,2 +1,4 @@
 #ide's files
 .idea/
+#node modules
+node_modules/
